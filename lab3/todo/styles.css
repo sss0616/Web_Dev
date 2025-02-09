@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-color: #6d4c9a;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+.container {
+    padding: 25px 200px;
+}
+.title {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.header .title {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.header {
+    background-color: blanchedalmond;
+}
+
+.del-btn {
+    cursor: pointer;
+}
+
+.del-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    max-height: 20px;
+    border:1px solid #15101C;
+    border-top:none;
+    border-radius: 12px;
+    background-color: #15101C;
+    margin-top: 16px;
+    color: #9E78CF;
+}
+.todo-item:first-child {
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+.left-part {
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.add-task-section {
+    display: flex;
+    gap: 20px;
+}
+#todo-input{
+    outline: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #3E1671;
+    background: transparent;
+    color: white;
+}
+#todo-input:focus {
+    border: 1px solid #8e6cba;
+}
+
+#add-button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #9E78CF;
+    color:white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.done-section {
+    margin-top: 64px;
+}
+
+.hidden {
+    display: none;
+}
+
+#reset-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 0;
+    color: white;
+    font-weight: 800;
+    margin-left: 30px;
+    font-size: 16px;
+    background-color: #9E78CF;
+}
+#add-button:hover {
+    background-color: #6d4c9a;
+    scale: 1.1;
+}
+
+.done-item {
+    text-decoration: line-through;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    max-height: 20px;
+    border:1px solid #15101C;
+    border-top:none;
+    border-radius: 12px;
+    background-color: #15101C;
+    margin-top: 16px;
+    color: #78CFB0;
+}
+
+@media (max-width: 745px) {
+    .container {
+        padding: 25px 10px;
+    }
+}
