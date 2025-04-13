@@ -1,0 +1,16 @@
+<ul>
+
+  <li *ngFor="let company of companies">
+    <a routerLink="/companies" (click)="getCompanyVacancies(company)"> {{company.name}} - {{company.city}}</a>
+  </li>
+</ul>
+
+
+
+  <h3 class="vacancy-title">Vacancies</h3>
+  <ul *ngIf="showCompany_vacancies">
+    <li *ngFor="let vacancy of company_vacancies" class="vacancy-item">
+      {{vacancy.id}} - {{vacancy.name}} - {{vacancy.description}} - {{vacancy.salary}} - {{vacancy.company.name}}
+    </li>
+  </ul>
+
